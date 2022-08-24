@@ -12,7 +12,10 @@ application prompts are given to you so that you may not only learn about our tr
 ### Application
 As soon are you open the app you are brought to a user menu so that you can decide what you would like to do, weather it be to buy a tree, leave a review   
 or evenfile a complaint. Simply follow the instructions so that we can get your tree to you faster.All you have to do is follow the selection, type in your 
-your response and press enter. Getting a tree has never been easier.                                                                                        
+your response and press enter. Getting a tree has never been easier.
+
+### ERD
+![TRUE ERD2](https://user-images.githubusercontent.com/102322868/186427579-48f11de7-3372-4a6e-a6e4-654aac57fec8.jpg)
 
 
 ### Technology sources used
