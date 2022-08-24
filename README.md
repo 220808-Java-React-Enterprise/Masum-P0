@@ -25,6 +25,9 @@ your response and press enter. Getting a tree has never been easier.
 * PostgreSQL-Database used for storage.
 * Junit- Used to test methods.
 * Mockito- "Spy" was used to simulate a database without needing one.
+* Html
+* Css
+* JavaScript
 
 
 ### Functionalities
