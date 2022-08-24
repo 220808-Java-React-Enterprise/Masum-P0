@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <header class="head">
+
+  </header>
+  <body>
+<link rel="stylesheet" href="project2.css">
+<b> <p class="bobbytitle">WELCOME TO BOB'S DISCOUNT TREES</p> </b>
+
+<figure>
+  <div class="animation1div">
+    <img src="boatpng.png" alt="simpleboat" class="boatanimation">
+    <img src="waves.jpg" class="waves">
+    <img src="dusk.jpg" class="dusk">
+  </div>
+</figure>
+<nav class="navbar1">
+<ul class="navbar1">
+  <li class="navbar11"> <button id="help">LET US HELP YOU CHOOSE A TREE</button></li>
+
+  <li class="navbar11">
+    <div class="dropdown">
+  <button class="dropbtn">LEARN MORE ABOUT OUR TREE ON THE INTERWEBZ</button>
+  <div class="dropdown-content">
+    <a href="https://en.wikipedia.org/wiki/Birch" target="_blank">Birch tree</a>
+    <a href="https://www.gardenguides.com/13428708-description-of-palm-trees.html" target="_blank">Palm tree</a>
+    <a href="https://www.britannica.com/plant/elm-tree" target="_blank">Forest elm</a>
+    <a href="https://naturalresources.extension.iastate.edu/forestry/iowa_trees/trees/red_oak.html" target="_blank">Red Oak </a>
+    <a href="https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/yew/" target="_blank">Yew tree</a>
+    <a href="https://www.feedipedia.org/node/39#:~:text=The%20rubber%20tree%20(Hevea%20brasiliensis,extracted%20by%20tapping%20the%20trunk." target="_blank">Rubber tree</a>
+  </div>
+</div></li>
+
+  <li class="navbar11"> <a href = "mailto: bobbysdiscounttrees@gmail.com" class="navbar11">SEND US AN EMAIL</a></a></li>
+  <li class="navbar11"> <a href="project2purchase.html"></a></li>
+</ul>
+</nav>
+<h2>Trees in Stock</h2>
+  <figure>
+<div class="row">
+  <div class="bloc">
+  <img src="b1.jpg" class="boatpics">
+  <figcaption class="boatfig">Birch</figcaption>
+  </div>
+
+  <div class="">
+    <img src="b3.jpg" class="boatpics">
+    <figcaption class="boatfig">Forest Elm</figcaption>
+  </div>
+  <div class="">
+    <img src="b4.jpg" class="boatpics">
+    <figcaption class="boatfig">Palm</figcaption>
+  </div>
+  <div class="">
+    <img src="b5.jpg" class="boatpics">
+    <figcaption class="boatfig">Red Oak</figcaption>
+  </div>
+  <div class="">
+    <img src="sunny.jpg" class="boatpics">
+    <figcaption class="boatfig">Yew</figcaption>
+  </div>
+  <div class="">
+    <img src="kayak.jpg" class="boatpics">
+    <figcaption class="boatfig">Rubber Tree</figcaption>
+  </div>
+</div>
+
+<div class="row2">
+  <div class="textstuffs">
+    <img src="lomacd.jpg" class="text">
+  </div>
+  <div class="textstuffs">
+    <img src="modeltd.jpg" class="text">
+  </div>
+  <div class="textstuffs">
+    <img src="yachmasterd.jpg" class="text">
+  </div>
+  <div class="textstuffs">
+    <img src="Santad.jpg" class="text">
+  </div>
+  <div class="textstuffs">
+    <img src="Sunnyd.jpg" class="text">
+  </div>
+  <div class="textstuffs">
+    <img src="kayakd.jpg" class="text">
+  </div>
+  <div class="textstuffs">
+    <img src="orod.jpg" class="text">
+  </div>
+</div>
+
+<div id="helpstuff" class="helpstuff">
+<div class="helptab" style="z-index:10">
+<div class="home">
+<a href="project2.html" class="home">  <button type="button" name="button" class="home">HOME</button></a>
+</div>
+<div class="inputs">
+
+<form id="forminputs" method="post">
+  <br>
+  <br>
+  <b>Finally tell us how the minimum speed you would like it to go</b>
+  <input type="text"value="" class="speedinput">
+  <br>
+  <br>
+    <button type="button" name="button" class="chooseboat" onclick="findboats()">Get all available boats</button>
+    <input type="reset">
+</div>
+</form>
+<div class="result">
+<p class="resultinfo"></p>
+<br>
+<p class="boatsthatarefound" id="boatafford"></p>
+</div>
+</div>
+</div>
+
+<script>
+
+var modal = document.getElementById("helpstuff");
+var btn = document.getElementById("help");
+btn.onclick = function() {
+modal.style.display = "block";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+
+</script>
+<script type="text/javascript" src="project2.js">
+</script>
+  </body>
+</html>

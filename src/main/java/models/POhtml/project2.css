@@ -1,0 +1,273 @@
+#help{
+  background-color: darkblue;
+  border:none;
+  color: white;
+}
+.inputs{
+  font-style: italic;
+  font-family: cursive;
+text-align: left;
+display: inline-block;
+width:33%;
+}
+input{
+  text-align: right;
+}
+.buy{
+  display:inline-block;
+  border-radius: 5rem;
+  color:darkblue;
+  overflow: hidden;
+  font-size: 1rem;
+  position:right;
+  text-align: right;
+  transition: all .3s;
+  width: 30%;
+
+}
+.buy:hover{
+  padding-top: 10px;
+  font-size: 16px;
+}
+.home{
+  display: inline-block;
+  border-radius: 5rem;
+  color: darkblue;
+  font-size: 1rem;
+
+  transition: all .3s;
+  position: left;
+  overflow: hidden;
+  z-index: 1;
+  text-align: left;
+  width: 30%;
+}
+.home:hover{
+  padding-top: 10px;
+  font-size: 16px;
+}
+.helpstuff{
+padding-top: 200px;
+display: inline-block;
+
+}
+.helptab {
+  background-color: white;
+
+  padding-top: 100px;
+  border: 10px solid black;
+  width: 100%;
+position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%, -50%);
+
+}
+.helpstuff {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: darkblue;
+  text-align: center;
+}
+li {
+  display:inline-block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ margin-left: 50px;
+ margin-right: 50px;
+}
+.navbar11{color: white;}
+li:hover {
+  background-color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.boatpics{
+  width:800px;
+  height:400px;
+  margin-top: 15px;
+  border: 2px solid darkblue;
+}
+.boatfig{
+  font-size: 22px;
+  font-style: italic;
+  font-weight: bold;
+}
+.row{
+  border: solid 10px lightblue;
+  box-shadow: 1px 1px 2px darkblue;
+  width:49%;
+  float:left;
+}
+.row2{
+  border: solid 10px lightblue;
+  box-shadow: 1px 1px 2px darkblue;
+  width:48%;
+  float:right;
+}
+.bloc{
+  width:50%
+}
+.text{
+  float:right;
+  width:800px;
+  height:400px;
+}
+.boatanimation{
+  height:240px;
+  animation: boaty 20s infinite;
+  position:absolute;
+  z-index: 3;
+  float:left;
+  animation-timing-function:ease-in;
+}
+@keyframes boaty {
+  0%{
+    left:0%;
+  }
+  10%{
+    left:25%;
+  }
+  15%{
+    left:60%;
+  }
+  17%{
+    left:69%:
+  }
+  20%{
+    left:90%;
+  }
+  48%{
+    left:91%;
+  }
+  49%{
+    transform: rotateY(1deg);
+  }
+  50%{
+    transform: rotateY(180deg);
+  }
+  67%{
+    left:39%:
+  }
+  75%{
+    left:20%;
+  }
+  99%{
+    left:0%;
+transform: rotateY(180deg);
+  }
+}
+.waves{
+  width:1900px;
+  height: 220px;
+  animation: wave 20s infinite;
+  animation-timing-function:ease-in;
+  z-index: 2;
+  position: absolute;
+}
+@keyframes wave {
+  0%{
+    opacity: 0.99;
+  }
+  10%{
+    opacity: 0.90;
+  }
+  15%{
+    opacity: 0.95;
+  }
+  17%{
+    opacity: 0.97;
+  }
+  20%{
+    opacity: 0.90;
+  }
+  50%{
+  opacity: 0.85;
+  }
+  67%{
+    opacity: 0.0;
+  }
+  75%{
+    opacity: 0.0;
+  }
+  99%{
+  opacity: 0.0;
+  }
+}
+.dusk{
+
+  width:1900px;
+  height: 220px;
+  z-index: 1;
+}
+.animation1div{
+  border: solid 5px darkblue;
+  text-align: center;
+  background-color: lightblue;
+}
+.dropbtn {
+  background-color: darkblue;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  z-index: 5
+  position: relative;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 5
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 5;
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: black;}
+.boatsthatarefound{
+  text-align: right;
+  position: right;
+  font-size:22px;
+}
+.result{
+  text-align: right;
+  position: relative;
+}

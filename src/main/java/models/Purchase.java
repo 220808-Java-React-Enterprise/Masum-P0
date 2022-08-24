@@ -1,4 +1,5 @@
 package models;
+import Daos.UserDaos;
 import Daos.ordersDaos;
 import models.Login;
 import Daos.PurchaseDaos;
@@ -87,8 +88,16 @@ public class Purchase {
                 //newpurchase.update(saplog);
 
                 orders neworder = new orders();
-
-                neworder.setOrder(ordernumber, username, total, westtree1, westtree2, westtree3);
+                String thisStore="";
+                if(storepref==1) {
+                    thisStore = "West Coast firs";
+                }
+                if(storepref==2){
+                    thisStore = "Sappy Logs";
+                }
+                UserDaos someguy=new UserDaos();
+                String retrieveID= someguy.getbyusername(username);
+                neworder.setOrder(ordernumber, username,retrieveID, total, saptree1, saptree2, saptree3,thisStore);
 
                 ordersDaos neworderDaos = new ordersDaos();
                 neworderDaos.save(neworder);
@@ -99,12 +108,12 @@ public class Purchase {
 
 
                 if (orderinquiry == 1) {
-                    System.out.println("Your username : "+username+"\nour order number: " + ordernumber + "\nYour order total is : $" + total + " \n your items are " + westtree1 + "Forest Elm, " + westtree2 + " Palm tree, " + "" + westtree3 + " Birch");
+                    System.out.println("Your username : "+username+"\nYour order number: " + ordernumber + "\nYour order total is : $" + total + " \nYour items are " + westtree1 + "Forest Elm, " + westtree2 + " Palm tree, " + "" + westtree3 + " Birch");
 
                 } else if (orderinquiry == 2) {
                     System.out.print("Okay understood, May the forest be with you ");
                 }
-                System.out.println("Goodbye");
+                System.out.println("Goodbye,may the forest be with you");
 
             }
 
@@ -154,10 +163,17 @@ public class Purchase {
                 SapLog.setStore("894", saptree1, saptree2, saptree3);
                 // PurchaseDaos newpurchase = new PurchaseDaos();
                 //newpurchase.update(saplog);
-
                 orders neworder = new orders();
-
-                neworder.setOrder(ordernumber, username, total, saptree1, saptree2, saptree3);
+                String thisStore="";
+                if(storepref==1) {
+                    thisStore = "West Coast firs";
+                }
+                if(storepref==2){
+                    thisStore = "Sappy Logs";
+                }
+                UserDaos someguy=new UserDaos();
+                String retrieveID= someguy.getbyusername(username);
+                neworder.setOrder(ordernumber, username,retrieveID, total, saptree1, saptree2, saptree3,thisStore);
 
                 ordersDaos neworderDaos = new ordersDaos();
                 neworderDaos.save(neworder);
@@ -167,7 +183,7 @@ public class Purchase {
 
 
                 if (orderinquiry == 1) {
-                    System.out.println("Your username : "+username+"\nYour order number: " + ordernumber + "\nYour order total is : $" + total + " \n Your items are : " + saptree1 + " Red oak, " + saptree2 + " Yew tree, " + "" + saptree3 + " Rubber Tree");
+                    System.out.println("Your username : "+username+"\nYour order number: " + ordernumber + "\nYour order total is : $" + total + " \nYour items are : " + saptree1 + " Red oak, " + saptree2 + " Yew tree, " + "" + saptree3 + " Rubber Tree");
 
                 } else if (orderinquiry == 2) {
                     System.out.print("Okay understood, May the forest be with you ");
